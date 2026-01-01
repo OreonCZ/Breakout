@@ -1,0 +1,43 @@
+/////////////////////////////////
+Muj Breakout projekt pojmenovany Beardout na pocest existenci agamy vousate (moje nejoblibenejsi zvire)
+
+/// Popis hry:
+- Hrace privita Main menu, ktere mu dovoli jen odejit ze hry, protoze kdo by to chtel hrat. 
+  Pokud chcete nervomoci hrat muj projekt, tak musite kliknout do inputu (prazdny div) a tam napisete vas username, aby se vam odemklo 'PLAY' tlacitko.
+  Tim chtel autor 'JAAAA' rici ze jmeno hrace je potreba k leaderboard TOP 8 hracu.
+  Po spusteni hry kliknutim na tlacitko 'PLAY' se spawne padlo a samozrejme bloky s mickem.
+  Micek pri startu hry instantne leti bud do leva ci prava. Hrac muze zkusit svym padlem odpalovat micky do ruznych smeru.
+  
+  Po trefeni bloku hrac ziska 10 bodu a blok se znici (10b > 6b) <3333 jsem hodny
+  Toto doporucuji pokud chce hrac sestrelit vsechny bloky a vyhrat hru.
+  Pokud se hraci podari vsechny bloky vybit, tak vyhral...
+  ...ale vlastne ne, protoze se spusti dalsi kolo a micek je o neco rychlejsi.
+  
+  Score hrace se uklada do binarniho souboru a jeho username se zobrazi v Main menu v LEADERBOARDu jen pokud byl hrac dobrej a umistil se.
+///----------------------
+  
+
+/// Hratelnost:
+- Padlo se ovlada bud tlacitky AD (A - doleva, D - doprava), nebo sipkami (<- = doleva, -> = doprava).
+- Ve hre tlacitkem 'ESCAPE' muzete odejit ze hry do Main menu.
+///----------------------
+
+/// Pozadavky:
+- Gcc compiler
+- Knihovna SDL2 pro SDL2
+- Knihovna SDL2_ttf pro text
+- Knihovna SDL2_mixer pro zvuky
+- Pouzivam CMAKE
+///----------------------
+
+/// Jak zkompilovat a spustit (Linux / I use Arch btw).
+// Vytvoril jsem i jednoduchy 'setup.sh' bash script, ktery usnadni psani 4 radku.
+
+/ Asi bych pak doporucoval mazat 'build' slozku, pokud neexistuje (coz poprvy ocividne nebude), tak muzete preskocit:
+- rm -rf build
+///////
+
+- mkdir -p build
+- cd build
+- cmake .. && make && ./breakout
+///----------------------
