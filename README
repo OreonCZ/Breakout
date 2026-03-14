@@ -1,7 +1,7 @@
 /////////////////////////////////
 My Breakout project named Beardout, in honor of my bearded dragon.
 
-/// <b>Game Description:</b>
+/// Game Description:
 - The player is greeted by the Main menu, which initially only allows exiting the game. 
   To play the game, the player must click on the input field and enter their username to unlock the 'PLAY' button.
   The username is required to track scores for the TOP 8 leaderboard.
@@ -16,12 +16,12 @@ My Breakout project named Beardout, in honor of my bearded dragon.
 ///----------------------
   
 
-/// <b>Gameplay:</b>
+/// Gameplay:
 - The paddle is controlled using either the A/D keys (A - left, D - right) or the arrow keys (<- = left, -> = right).
 - Pressing the 'ESCAPE' key during gameplay returns the player to the Main menu.
 ///----------------------
 
-/// <b>Requirements:</b>
+/// Requirements:
 - GCC compiler
 - SDL2
 - SDL2_ttf
@@ -29,7 +29,7 @@ My Breakout project named Beardout, in honor of my bearded dragon.
 - CMake
 ///----------------------
 
-/// <b>How to compile and run (linux):</b>
+/// How to compile and run (linux):
 // A simple 'setup.sh' bash script is included to automate the build process.
 // Type './setup.sh' into terminal to run it.
 
