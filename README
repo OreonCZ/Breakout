@@ -1,39 +1,39 @@
 /////////////////////////////////
-Muj Breakout projekt pojmenovany Beardout na pocest existenci agamy vousate (moje nejoblibenejsi zvire)
+My Breakout project named Beardout, in honor of my bearded dragon.
 
-/// Popis hry:
-- Hrace privita Main menu, ktere mu dovoli jen odejit ze hry, protoze kdo by to chtel hrat. 
-  Pokud chcete nervomoci hrat muj projekt, tak musite kliknout do inputu (prazdny div) a tam napisete vas username, aby se vam odemklo 'PLAY' tlacitko.
-  Tim chtel autor 'JAAAA' rici ze jmeno hrace je potreba k leaderboard TOP 8 hracu.
-  Po spusteni hry kliknutim na tlacitko 'PLAY' se spawne padlo a samozrejme bloky s mickem.
-  Micek pri startu hry instantne leti bud do leva ci prava. Hrac muze zkusit svym padlem odpalovat micky do ruznych smeru.
+/// <b>Game Description:</b>
+- The player is greeted by the Main menu, which initially only allows exiting the game. 
+  To play the game, the player must click on the input field and enter their username to unlock the 'PLAY' button.
+  The username is required to track scores for the TOP 8 leaderboard.
+  After starting the game by clicking 'PLAY', the paddle, blocks, and the ball will spawn.
+  At the start, the ball instantly moves to the left or right. The player can use the paddle to deflect the ball in various directions.
   
-  Po trefeni bloku hrac ziska 10 bodu a blok se znici (10b > 6b) <3333 jsem hodny
-  Toto doporucuji pokud chce hrac sestrelit vsechny bloky a vyhrat hru.
-  Pokud se hraci podari vsechny bloky vybit, tak vyhral...
-  ...ale vlastne ne, protoze se spusti dalsi kolo a micek je o neco rychlejsi.
+  Upon hitting a block, the player gains 10 points and the block is destroyed.
+  The goal of the game is to destroy all the blocks on the screen.
+  If the player successfully clears all blocks, the next round begins, and the ball speed is increased.
   
-  Score hrace se uklada do binarniho souboru a jeho username se zobrazi v Main menu v LEADERBOARDu jen pokud byl hrac dobrej a umistil se.
+  The player's score is saved to a binary file. The username and score will be displayed on the LEADERBOARD in the Main menu if the player achieves a high enough rank.
 ///----------------------
   
 
-/// Hratelnost:
-- Padlo se ovlada bud tlacitky AD (A - doleva, D - doprava), nebo sipkami (<- = doleva, -> = doprava).
-- Ve hre tlacitkem 'ESCAPE' muzete odejit ze hry do Main menu.
+/// <b>Gameplay:</b>
+- The paddle is controlled using either the A/D keys (A - left, D - right) or the arrow keys (<- = left, -> = right).
+- Pressing the 'ESCAPE' key during gameplay returns the player to the Main menu.
 ///----------------------
 
-/// Pozadavky:
-- Gcc compiler
-- Knihovna SDL2 pro SDL2
-- Knihovna SDL2_ttf pro text
-- Knihovna SDL2_mixer pro zvuky
-- Pouzivam CMAKE
+/// <b>Requirements:</b>
+- GCC compiler
+- SDL2
+- SDL2_ttf
+- SDL2_mixer
+- CMake
 ///----------------------
 
-/// Jak zkompilovat a spustit (Linux / I use Arch btw).
-// Vytvoril jsem i jednoduchy 'setup.sh' bash script, ktery usnadni psani 4 radku.
+/// <b>How to compile and run (linux):</b>
+// A simple 'setup.sh' bash script is included to automate the build process.
+// Type './setup.sh' into terminal to run it.
 
-/ Asi bych pak doporucoval mazat 'build' slozku, pokud neexistuje (coz poprvy ocividne nebude), tak muzete preskocit:
+/ It is recommended to delete the 'build' directory if it already exists before recompiling:
 - rm -rf build
 ///////
 
